@@ -29,6 +29,11 @@
 	 width: 100%;
 }
 
+.inner-search {
+	text-align: center;
+	margin: 50px 50px 50px 50px;
+}
+
 ul {
   list-style-type: none;
 }

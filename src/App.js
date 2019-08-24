@@ -2,10 +2,50 @@ import React from 'react';
 import './App.css';
 import './style.css';
 
+
+class SearchTextBox extends React.Component {	
+	render() {
+		return (
+			<input name="programText" type="text" value={this.props.value} />
+		);
+	}
+}
+
 class SearchArea extends React.Component {
+
+	 constructor(props) {
+		  super(props);
+		  this.state = {
+			  searchText: ""
+		  };
+	 }	
+	
+	 programSelectChange() {
+		  const searchText = this.state.searchText.slice();
+		  searchText = "Program";
+		  this.setState({ searchText: "program" });		 
+	 }
+	
 	 render() {
 		  return (
-				<div> Insert Search Stuff here </div>
+				<table class="tg greedy-width">
+					<tr>
+						<th class="tg th inner-search">
+							<select name="programSelect" onchange="programSelectChange()">
+								<option value="sport">Sport</option>
+								<option value="science">Science</option>
+								<option value="ballet">Ballet</option>
+								<option value="rotc">ROTC</option>
+								<option value="art">Arts & Crafts</option>
+								<option value="theater">Theatre</option>
+							</select>
+							<SearchTextBox value={this.state.searchText}/>
+							<label class="f">Near</label>
+							<input name="locationText" type="text" />
+							<button name="searchButton">Search</button>
+						</th>
+					</tr>
+				</table>
 		  );
 	 }
 }

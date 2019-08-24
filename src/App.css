@@ -1,0 +1,71 @@
+.App {
+	text-align: center;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+.field-container {
+	border: 1px solid red;
+	margin: 5px 5px 5px 5px;
+}
+
+.card-school-picture {
+	height: 150px;
+	max-height: 150px;
+	width: 150px;
+	max-width: 150px;
+}
+
+.favorite-star {
+	height: 25px;
+	max-height: 25px;
+	width: 25px;
+	max-width: 25px;
+}
+
+.greedy-width {
+	 width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-color: #aabcfe;
+	align-self: center;
+}
+
+	.tg td {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		padding: 10px 5px;
+		border-style: solid;
+		border-width: 1px;
+		overflow: hidden;
+		word-break: normal;
+		border-color: #aabcfe;
+		color: #669;
+		background-color: #e8edff;
+		vertical-align: top;
+	}
+
+	.tg th {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		padding: 5px 5px;
+		border-style: solid;
+		border-width: 1px;
+		overflow: hidden;
+		word-break: normal;
+		border-color: #aabcfe;
+		color: #039;
+		height: 30px;
+		background-color: #b9c9fe;
+		vertical-align: top;
+	}
